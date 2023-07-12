@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yell"
+    android:orientation="vertical"
+    tools:context=".activities.ActivitySignup">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="BASKET SEARCH"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sport2"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="606dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/png3" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/nameicon2"
+        android:drawablePadding="20dp"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/SUPASSWORD"
+        android:layout_width="413dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="4dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/passicon"
+        android:drawablePadding="20dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/datePickerButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="153dp"
+        android:onClick="openDatePicker"
+        android:text="CHOOSE DATE HERE"
+        android:backgroundTint="@color/brown"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sport2"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="301dp"
+        android:layout_marginBottom="56dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sport2"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbFemale"></Button>
+
+    <EditText
+        android:id="@+id/phone_signup"
+        android:layout_width="460dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="201dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="phone number"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/phcon"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/position"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="413dp"
+        android:layout_height="59dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/nameicon2"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="full name"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SUPASSWORD" />
+
+    <EditText
+        android:id="@+id/position"
+        android:layout_width="413dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="124dp"
+        android:background="#30ffffff"
+        android:ems="10"
+        android:hint="position"
+        android:drawableLeft="@drawable/passicon2"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:drawablePadding="20dp"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SUPASSWORD" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="413dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="180dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/height"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="height (in cm)"
+        android:inputType="number"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/rbMale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SUPASSWORD" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="570dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rbMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="male"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sport2"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/rbFemale"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/position" />
+
+    <RadioButton
+        android:id="@+id/rbFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="female"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sport2"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbMale" />
+
+    <ImageButton
+        android:id="@+id/btnBack1"
+        android:layout_width="23dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/yell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

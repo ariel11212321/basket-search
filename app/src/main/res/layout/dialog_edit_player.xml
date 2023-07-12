@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/yell"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="448dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="USERNAME: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="448dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="PASSWORD: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <EditText
+        android:id="@+id/etFullname"
+        android:layout_width="448dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="FULLNAME: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="448dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="phone"
+        android:hint="PHONE: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFullname" />
+
+    <EditText
+        android:id="@+id/etPosition"
+        android:layout_width="448dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="POSITION: "
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="448dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="AGE: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPosition" />
+
+
+    <EditText
+        android:id="@+id/etTeam"
+        android:layout_width="448dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="TEAM: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDate" />
+
+    <EditText
+        android:id="@+id/etGender"
+        android:layout_width="448dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_weight="1"
+        android:hint="GENDER: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDate" />
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="448dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:layout_weight="1"
+        android:hint="HEIGHT: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTeam" />
+
+    <Button
+        android:id="@+id/submitEditBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="320dp"
+        android:text="submit changes"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGender" />
+
+    <Button
+        android:id="@+id/btn_delete_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="93dp"
+        android:backgroundTint="@color/red"
+        android:text="DELETE PLAYER"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etHeight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

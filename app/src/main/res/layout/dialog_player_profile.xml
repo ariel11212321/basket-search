@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/yell"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialog_player_name"
+        android:layout_width="87dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="324dp"
+        android:layout_weight="1"
+        android:text="name: "
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialog_player_team"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:text="team: "
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_player_position" />
+
+    <TextView
+        android:id="@+id/dialog_player_username"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
+        android:text="username: "
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_player_name" />
+
+    <TextView
+        android:id="@+id/dialog_player_position"
+        android:layout_width="132dp"
+        android:layout_height="39dp"
+        android:text="position: "
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_player_rating" />
+
+    <TextView
+        android:id="@+id/dialog_player_rating"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:text="rating: "
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_player_phone" />
+
+    <TextView
+        android:id="@+id/dialog_player_phone"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:text="phone: "
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_player_username" />
+
+    <ImageView
+        android:id="@+id/player_profile_pic"
+        android:layout_width="215dp"
+        android:layout_height="292dp"
+        android:layout_marginStart="198dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decline_btn" />
+
+    <Button
+        android:id="@+id/accept_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:backgroundTint="@color/green"
+        android:text="accept"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_player_team" />
+
+    <Button
+        android:id="@+id/decline_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="222dp"
+        android:layout_marginTop="353dp"
+        android:backgroundTint="@color/red"
+        android:text="decline"
+        app:layout_constraintStart_toEndOf="@+id/accept_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

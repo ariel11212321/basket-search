@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yell"
+    android:orientation="vertical"
+    tools:context=".activities.createforms.ActivityCourtForm">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="347dp"
+        android:layout_height="33dp"
+
+        android:layout_marginStart="64dp"
+        android:fontFamily="@font/sport2"
+        android:text="REQUEST COURT"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvNameTeam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <EditText
+        android:id="@+id/tvNameTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginBottom="504dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/nameicon2"
+        android:drawablePadding="20dp"
+        android:hint="name"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/position2"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/phcon"
+        android:drawablePadding="20dp"
+        android:hint="phone"
+        android:inputType="number"
+        android:padding="20dp"
+
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/website"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameTeam" />
+
+    <ImageButton
+        android:id="@+id/createCourtBtn"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/yell"
+        android:src="@drawable/plusicon"
+        android:text="create Court"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address"></ImageButton>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="387dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="124dp"
+        android:background="@color/yell"
+        android:clickable="true"
+        android:drawableLeft="@drawable/mapicon"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:fontFamily="@font/sport2"
+        android:padding="20dp"
+        android:src="@drawable/mapicon"
+        android:text="CHOOSE COURT LOCATION"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description"></TextView>
+
+    <EditText
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="201dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/websiteicon"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="website"
+        android:inputType="textUri"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/position2" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="4dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/description"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="description"
+        android:inputType="textUri"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/position2" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="207dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="166dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/website"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@drawable/basket_logo2"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/courtPic"
+        android:layout_width="91dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="3dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toEndOf="@+id/createCourtBtn"
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_person_outline_24" />
+
+    <ImageButton
+        android:id="@+id/btnBack1"
+        android:layout_width="26dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/yell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+</androidx.constraintlayout.widget.ConstraintLayout>

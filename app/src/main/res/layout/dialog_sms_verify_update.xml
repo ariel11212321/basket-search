@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/yell"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etSmsCode"
+        android:layout_width="394dp"
+        android:layout_height="53dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="enter the code your received"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_confirm_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="127dp"
+        android:text="CONFIRM"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSmsCode" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <item
+        android:id="@+id/mnuMusicOn"
+        android:title="TURN MUSIC ON / OFF"
+         />
+    <item
+        android:id="@+id/itemLogout"
+        android:title="LOG OUT"/>
+    <item
+        android:id="@+id/itemReport"
+        android:title="REPORT ISSUE"/>
+
+
+
+
+
+</menu>

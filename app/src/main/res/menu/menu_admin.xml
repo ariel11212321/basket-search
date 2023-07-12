@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <item  android:id="@+id/itemAllPlayersList"
+        android:title="VIEW ALL PLAYERS LIST"/>
+    <item  android:id="@+id/itemAllCourtsList"
+        android:title="VIEW ALL COURTS LIST"/>
+    <item  android:id="@+id/itemAllTeamsList"
+        android:title="VIEW ALL TEAMS LIST"
+        app:showAsAction="withText"/>
+    <item  android:id="@+id/itemAllReportsList"
+        android:title="VIEW ALL REPORTS LIST"/>
+    <item  android:id="@+id/itemGeneratePassword"
+        android:title="GENERATE PASSWORD"/>
+    <item  android:id="@+id/itemAllCourtRequestsList"
+        android:title="VIEW ALL COURT REQUESTS LIST"/>
+    <item  android:id="@+id/itemAllTeamRequestsList"
+        android:title="VIEW ALL TEAMS REQUESTS LIST"/>
+
+    <item android:id="@+id/logoutAdmin" android:title="logout"/>
+
+</menu>  

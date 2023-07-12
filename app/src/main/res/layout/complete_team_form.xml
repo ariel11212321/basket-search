@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/yell"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNameTeam"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLocationTeam"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="location"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameTeam" />
+
+    <TextView
+        android:id="@+id/tvCaptainTeam"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="captain"
+
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocationTeam" />
+
+    <ImageView
+        android:id="@+id/teamPic"
+        android:layout_width="199dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="496dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaptainTeam"
+        app:srcCompat="@drawable/team_logo" />
+
+    <Button
+        android:id="@+id/btn_submit_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="416dp"
+        android:text="SUBMIT"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaptainTeam" />
+
+    <ImageButton
+        android:id="@+id/ibBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="275dp"
+        android:background="@color/yell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCaptainTeam"
+        app:srcCompat="@drawable/goback" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

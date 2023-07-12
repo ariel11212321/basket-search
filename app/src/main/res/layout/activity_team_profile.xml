@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/yell"
+    tools:context=".activities.profiles.ActivityTeamProfile"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/teamName"
+        android:layout_width="210dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="92dp"
+        android:drawableLeft="@drawable/nameicon2"
+        android:fontFamily="@font/sport2"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teamCaptain"
+        android:layout_width="402dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/sport2"
+        android:text="captain:"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamImage" />
+
+    <Spinner
+        android:id="@+id/teamPlayersSpinner"
+        android:layout_width="109dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="302dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamCaptain" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="482dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:text="BASKET SEARCH - TEAM PROFILE"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/teamImage"
+        android:layout_width="128dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/teamName"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/ic_baseline_person_outline_24" />
+
+    <Button
+        android:id="@+id/report_team_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="97dp"
+        android:backgroundTint="@color/red"
+        android:text="REPORT"
+        android:fontFamily="@font/sport2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_request_join_team"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamPlayersSpinner" />
+
+    <Button
+        android:id="@+id/btn_request_join_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="7dp"
+        android:text="REQUEST TO JOIN TEAM"
+        android:fontFamily="@font/sport2"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamPlayersSpinner" />
+
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="212dp"
+        android:backgroundTint="@color/green"
+        android:text="ACCEPT"
+        android:fontFamily="@font/sport2"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/decline"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamPlayersSpinner" />
+
+    <Button
+        android:id="@+id/decline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="@color/red"
+        android:text="DECLINE"
+        android:fontFamily="@font/sport2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_edit_team"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_team_join_requests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="28dp"
+        android:text="TEAM JOIN REQUESTS"
+        android:fontFamily="@font/sport2"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintBottom_toTopOf="@+id/btn_request_join_team"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamPlayersSpinner" />
+
+    <Button
+        android:id="@+id/btn_edit_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/red"
+        android:text="DELETE TEAM"
+        android:fontFamily="@font/sport2"
+        app:layout_constraintBottom_toTopOf="@+id/report_team_btn"
+        app:layout_constraintEnd_toStartOf="@+id/btn_team_join_requests"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamPlayersSpinner" />
+
+    <Button
+        android:id="@+id/btn_leave_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="@color/red"
+        android:visibility="gone"
+        android:text="LEAVE TEAM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamPlayersSpinner" />
+    <ImageButton
+        android:id="@+id/btnBack1"
+        android:layout_width="23dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/yell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

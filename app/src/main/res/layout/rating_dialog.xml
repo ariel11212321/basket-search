@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/yell"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/etRatingComment"
+        android:layout_width="282dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="71dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="comment goes here"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingstar1" />
+
+    <Button
+        android:id="@+id/btnSubmitRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="84dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/brown"
+        android:text="submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRatingComment" />
+
+    <ImageView
+        android:id="@+id/ratingstar1"
+        android:layout_width="70dp"
+        android:layout_height="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_star" />
+
+    <ImageView
+        android:id="@+id/ratingstar4"
+        android:layout_width="70dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/ratingstar3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_star" />
+
+    <ImageView
+        android:id="@+id/ratingstar5"
+        android:layout_width="70dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/ratingstar4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_star" />
+
+    <ImageView
+        android:id="@+id/ratingstar3"
+        android:layout_width="70dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/ratingstar2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_star" />
+
+    <ImageView
+        android:id="@+id/ratingstar2"
+        android:layout_width="70dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/ratingstar1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_star" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/yell"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:background="@color/brown">
+
+        <TextView
+            android:id="@+id/court_name_one_row"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="name" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:text="distance" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

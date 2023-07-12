@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/groupEdit">
+        <item
+                    android:id="@+id/itemEditCourt"
+                    android:title="Edit Court"/>
+
+    </group>
+
+    <group android:id="@+id/groupNoEdit">
+        <item
+            android:id="@+id/itemAddCourtReview"
+            android:title="Add Court Review"/>
+        <item android:id="@+id/itemReportCourt"
+            android:title="Report Court"/>
+
+
+    </group>
+
+    <item
+        android:id="@+id/itemAllCourtReviews"
+        android:title="ALL Court Reviews"/>
+
+    <item
+        android:id="@+id/mnuMusicOn"
+        android:title="TURN MUSIC ON"
+        />
+    <item android:id="@+id/mnuMusicOff" android:title="TURN MUSIC OFF"/>
+
+</menu>

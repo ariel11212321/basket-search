@@ -1,0 +1,15 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize the primary and accent colors if needed -->
+        <item name="colorPrimary">@color/yell</item>
+        <item name="colorPrimaryDark">@color/yell</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Disable the window action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="NavigationViewStyle" parent="Widget.Design.NavigationView">
+        <item name="android:paddingTop">8dp</item>
+    </style>
+</resources>

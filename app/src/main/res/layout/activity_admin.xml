@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yell"
+    android:theme="@style/AppTheme"
+    tools:context=".activities.ActivityAdmin">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Your main content goes here -->
+        <!-- ... -->
+
+        <!-- Navigation drawer content -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            style="@style/NavigationViewStyle"
+            android:background="@color/yell"
+            app:menu="@menu/menu_navigation_drawer" />
+
+        <ImageButton
+            android:id="@+id/btnBack1"
+            android:layout_width="23dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="704dp"
+            android:background="@color/yell"
+            app:srcCompat="@drawable/back" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/yell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@menu/ic_menu"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/admin_name"
+        android:layout_width="397dp"
+        android:layout_height="83dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="BASKET SEARCH - ADMIN PANEL"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="271dp"
+        android:layout_height="211dp"
+
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_name"
+        app:srcCompat="@drawable/court22" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

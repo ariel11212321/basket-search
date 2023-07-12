@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/yell"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:background="@color/brown">
+
+
+        <TextView
+            android:id="@+id/tvTeamName"
+            android:layout_width="75dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="NAME"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvTeamCaptain"
+            android:layout_width="134dp"
+            android:layout_height="113dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="CAPTAIN"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/onerowteam_star1"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/white_star" />
+
+        <ImageView
+            android:id="@+id/onerowteam_star2"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/white_star" />
+
+        <ImageView
+            android:id="@+id/onerowteam_star3"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/white_star" />
+
+        <ImageView
+            android:id="@+id/onerowteam_star4"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/white_star" />
+
+        <ImageView
+            android:id="@+id/onerowteam_star5"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/white_star" />
+
+        <ImageView
+            android:id="@+id/tvTeamImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/team" />
+    </LinearLayout>
+
+</LinearLayout>

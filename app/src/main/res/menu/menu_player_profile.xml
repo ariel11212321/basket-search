@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/itemAllCourtsOwned"
+        android:title="WATCH ALL OWNED COURTS"/>
+    <item android:id="@+id/itemEditPlayer"
+        android:title="EDIT PLAYER" />
+    <item android:id="@+id/itemAllFriends"
+        android:title="WATCH ALL FRIENDS"
+        android:icon="@drawable/team"/>
+    <item android:id="@+id/itemAllFriendRequests"
+        android:title="WATCH ALL Friend Requests" />
+    <item android:id="@+id/itemAllRatings"
+        android:icon="@drawable/yellow_star"
+        android:title="ALL REVIEWS"/>
+    <item
+        android:id="@+id/mnuMusicOn"
+        android:title="TURN MUSIC ON"
+        />
+    <item android:id="@+id/mnuMusicOff" android:title="TURN MUSIC OFF"/>
+
+
+
+</menu>

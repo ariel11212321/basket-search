@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/yell"
+    tools:context=".activities.profiles.ActivityPlayerProfile">
+
+    <TextView
+        android:id="@+id/plocation"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:drawableLeft="@drawable/mapicon"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/sport2"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pheight" />
+
+    <TextView
+        android:id="@+id/pteam"
+        android:layout_width="413dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/team"
+        android:paddingLeft="10dp"
+        android:textSize="30dp"
+        android:fontFamily="@font/sport2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pheight" />
+
+    <TextView
+        android:id="@+id/pusername"
+        android:layout_width="407dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/sport2"
+        android:layout_marginTop="4dp"
+        android:drawableLeft="@drawable/nameicon2"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_profile_pic" />
+
+    <TextView
+        android:id="@+id/pposition"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:drawableLeft="@drawable/passicon2"
+
+        android:fontFamily="@font/sport2"
+        android:paddingLeft="10dp"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pphone" />
+
+    <TextView
+        android:id="@+id/page"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ageicon"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/sport2"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pposition" />
+
+    <TextView
+        android:id="@+id/pheight"
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:drawableLeft="@drawable/height"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/sport2"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBarPlayer" />
+
+    <TextView
+        android:id="@+id/pphone"
+        android:layout_width="406dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/phcon"
+        android:fontFamily="@font/sport2"
+        android:paddingLeft="10dp"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pusername" />
+
+    <ImageView
+        android:id="@+id/player_profile_pic"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="326dp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_start_game"
+        android:layout_width="138dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/brown"
+        android:text="START GAME"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plocation" />
+
+    <RatingBar
+        android:id="@+id/ratingBarPlayer"
+        android:layout_width="238dp"
+        android:layout_height="44dp"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:isIndicator="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page" />
+
+    <Button
+        android:id="@+id/btn_accept_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/green"
+        android:text="ACCEPT"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/btn_decline_request"
+        app:layout_constraintTop_toBottomOf="@+id/plocation" />
+
+    <Button
+        android:id="@+id/btn_decline_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="216dp"
+        android:backgroundTint="@color/red"
+        android:text="DECLINE"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/btn_accept_request"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plocation" />
+
+    <ImageButton
+        android:id="@+id/btnBack1"
+        android:layout_width="23dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/yell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@color/yell"
+    android:layout_height="wrap_content">
+
+    <com.example.a12thproject.widgets.MultiSpinnerSearch
+        android:id="@+id/filterSpinner"
+        android:layout_width="387dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="1dp"
+
+        android:popupBackground="@color/purple_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="335dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="252dp"
+        android:text="submit"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filterSpinner" />
+
+    <EditText
+        android:id="@+id/etFilterValues"
+        android:layout_width="391dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="values - seperate by comma (,) in order as mentioned above"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filterSpinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
